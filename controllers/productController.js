@@ -48,3 +48,20 @@ export const updateProduct = async (req, res) => {
     res.status(500).json({ message: error.message });
     }
 };
+
+//-------DELETE------//
+
+export const deleteProduct = async (req, res) => {
+    try {
+        const ProductId = req.params.id;
+        const product = await ProductModel.findByPk(ProductId);
+        if (!product) {
+        res.status(404).json({ message: "product does not exits" });
+        } else {
+        await ProductModel.destroy({ where: { id: ProductId } });
+        res.status(200).json({ message: "product deleted successfully" });
+        }
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
