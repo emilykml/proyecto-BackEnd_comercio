@@ -44,6 +44,8 @@ stock (Integer)
 brands_id (Foreign Key referencing brands.id)
 
 # API Endpoints
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/30200003-dc4157f5-3684-4dee-84ff-daf728744f8f?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D30200003-dc4157f5-3684-4dee-84ff-daf728744f8f%26entityType%3Dcollection%26workspaceId%3Ddb0156dd-f346-4872-82b4-50dbb0d75dcb)
+
 ## Brand
 GET /brand: Get all brands.
 POST /brand: Create a new brand.
