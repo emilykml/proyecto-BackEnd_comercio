@@ -13,3 +13,5 @@ const ProductModel = db.define("products", {
 
 export default ProductModel;
 
+
+
